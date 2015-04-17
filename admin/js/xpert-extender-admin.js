@@ -1,6 +1,18 @@
 (function( $ ) {
 	'use strict';
 
+	$(document).ready(function(){
+		console.log("we are here");
+
+  		$(".tx_feature_layout").imagepicker();
+
+		$(document).on('change', '#tx_position', function(){
+			var addon = $(this).find("option:selected").attr("data-addon");
+			$("tr.addon-settings").addClass("hide");
+			$("tr[data-addon="+addon+"]").removeClass('hide');
+		});
+
+	});
 	/**
 	 * All of the code for your admin-specific JavaScript source
 	 * should reside in this file.

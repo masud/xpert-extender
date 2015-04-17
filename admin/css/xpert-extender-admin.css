@@ -2,3 +2,12 @@
  * All of the CSS for your admin-specific functionality should be
  * included in this file.
  */
+/*
+ tr#tx_setting_style {
+  display: none;
+}
+*/
+
+.hide {
+  display: none;
+}

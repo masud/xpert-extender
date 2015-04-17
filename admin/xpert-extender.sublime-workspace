@@ -1,0 +1,879 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fu",
+				"fun	function …"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"mini",
+				"minifyjs"
+			],
+			[
+				"la",
+				"layoutFour"
+			],
+			[
+				"lay",
+				"layoutThree"
+			],
+			[
+				"tx",
+				"tx_position"
+			],
+			[
+				"get_the",
+				"get_the_title"
+			],
+			[
+				"fea",
+				"Feature"
+			],
+			[
+				"che",
+				"check"
+			],
+			[
+				"glo",
+				"global"
+			],
+			[
+				"tex",
+				"textarea"
+			],
+			[
+				"ap",
+				"appendableNumber"
+			],
+			[
+				"o",
+				"offset_class"
+			],
+			[
+				"remo",
+				"remove"
+			],
+			[
+				"of",
+				"offset_input"
+			],
+			[
+				"chec",
+				"checkbox"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"TI",
+				"title"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"add_",
+				"add_meta_box"
+			],
+			[
+				"add_meta",
+				"add_meta_boxes"
+			],
+			[
+				"meta",
+				"metabox"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"re",
+				"remove"
+			],
+			[
+				"su",
+				"subscriber"
+			],
+			[
+				"op",
+				"optinHome"
+			],
+			[
+				"page",
+				"Page"
+			],
+			[
+				"optin",
+				"optinPage"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"li",
+				"lightbox"
+			],
+			[
+				"j",
+				"jquery-ui"
+			],
+			[
+				"int",
+				"interval"
+			],
+			[
+				"in",
+				"interval"
+			],
+			[
+				"mi",
+				"middle"
+			],
+			[
+				"fi",
+				"find"
+			],
+			[
+				"opt_",
+				"opt_val"
+			],
+			[
+				"va",
+				"value1"
+			],
+			[
+				"val",
+				"value1"
+			],
+			[
+				"xpert",
+				"xpert_optin"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"T",
+				"ThemeXpert"
+			],
+			[
+				"border-b",
+				"border-bottom"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"cl",
+				"cloned"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"tx-",
+				"tx-close"
+			],
+			[
+				"A",
+				"Accordion"
+			],
+			[
+				"pa",
+				"Panel"
+			],
+			[
+				"fa",
+				"facebook"
+			],
+			[
+				"fa-",
+				"fa-facebook"
+			],
+			[
+				"newI",
+				"newIconChange"
+			],
+			[
+				"ch",
+				"chosen"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"c",
+				"chosen"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"ass",
+				"assets"
+			],
+			[
+				"wp_enqueue_s",
+				"wp_enqueue_style"
+			],
+			[
+				"ac",
+				"action-new"
+			],
+			[
+				"clo",
+				"clonable"
+			],
+			[
+				"item",
+				"item_menu"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"colo",
+				"color_option"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"p",
+				"php	<?php … ?>"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"title_",
+				"title_header_text"
+			],
+			[
+				"header_",
+				"header_title"
+			],
+			[
+				"site",
+				"site-title"
+			],
+			[
+				"wp",
+				"wp_themex"
+			],
+			[
+				"game",
+				"gamesquare_customizer_register"
+			],
+			[
+				"cus",
+				"customize_register"
+			],
+			[
+				"gam",
+				"gamesquare"
+			],
+			[
+				"Bac",
+				"background_color"
+			],
+			[
+				"ba",
+				"background_color"
+			],
+			[
+				"WP_Customi",
+				"wp_customize"
+			],
+			[
+				"array",
+				"array"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "class-xpert-extender-admin.php",
+			"settings":
+			{
+				"buffer_size": 2838,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "AddonContainer.php",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "sa",
+		"selected_items":
+		[
+			[
+				"sa",
+				"Project: Save As"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"j",
+				"Project: Refresh Folders"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/admin"
+	],
+	"file_history":
+	[
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/js/app.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/gulpfile.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/text-button.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/xpert-feature.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/trunk/includes/class-xpert-extender.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/trunk/admin/class-xpert-extender-admin.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/xpert-extender.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/wp-optin.php",
+		"/home/msd/www/wordpress/wp-content/themes/bingo-wp/functions.php",
+		"/home/msd/Downloads/wordpress_theme/selectize.js-master/examples/basic.html",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/css/style.css",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/less/app.less",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/untitled.html",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/js/test.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/admin-settings.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/style.css",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/package.json",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/gulpfile.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/css/app.css",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/vendor/bootstrap/css/modals.less",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/css/modals.css",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/readme.txt",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/css",
+		"/home/msd/.cache/.fr-4y1pV8/bingo/index.html",
+		"/home/msd/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/subscription/createsend-php-4.0.2/LICENSE",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/assets/vendor/bootstrap/less/input-groups.less",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/dashboard/js/tinymce/LICENSE.TXT",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/assets/vendor/bootstrap/less/mixins/text-emphasis.less",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/assets/vendor/bootstrap/less/mixins/center-block.less",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/subscription/createsend-php-4.0.2/csrest_subscribers.php",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/subscription/infusionsoft/xmlrpc-3.0/lib/xmlrpc.inc",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/subscription/infusionsoft/xmlrpc-3.0/lib/xmlrpc_wrappers.inc",
+		"/home/msd/.local/share/Trash/files/xpert-feature/xpert-feature.php",
+		"/home/msd/.cache/.fr-lPUFtG/xpert-feature-x/xpert-feature.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x_past/text-button.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x_past/xpert-feature.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/xpert_accordion.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/vendor/test.html",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/tinymc_.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/shortcode/accordion.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature/xpert-feature.php",
+		"/home/msd/www/bootstrap-layout-builder/assets/js/script.js",
+		"/home/msd/www/bootstrap-layout-builder/assets/css/style.css",
+		"/home/msd/www/bootstrap-layout-builder/index.html",
+		"/home/msd/www/wordpress/wp-content/plugins/test_team/starter-team.php",
+		"/home/msd/www/wordpress/wp-content/plugins/team-post-type-master/includes/class-post-type-registrations.php",
+		"/home/msd/www/wordpress/wp-content/plugins/tx-team/tx-team.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature/xpert-feature.php~",
+		"/home/msd/www/wordpress/wp-content/plugins/tx-team/requires/tx_metabox.php",
+		"/home/msd/www/wordpress/wp-content/plugins/team-post-type-master/includes/class-post-type.php",
+		"/home/msd/www/wordpress/wp-content/plugins/team-post-type-master/team-post-type.php",
+		"/home/msd/www/wordpress/wp-content/plugins/starter-team/starter-team.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/css/app.css",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/app_optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/app.js",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/js/admin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/bloom.php",
+		"/home/msd/wp-optin/admin-settings.php",
+		"/home/msd/wp-optin/wp-optin.php",
+		"/home/msd/wp-optin/assets/css/styles.css",
+		"/home/msd/wp-optin/assets/css/app.css",
+		"/home/msd/wp-optin/assets/js/app.js",
+		"/home/msd/wp-optin/assets/js/app_optin.js",
+		"/home/msd/www/bootstrap-layout-builder/assets/less/style.less",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/assets/js/app.js",
+		"/media/msd/DELL/bootstrap-layout-builder/index.html",
+		"/home/msd/Desktop/MailChimp/demo.php",
+		"/home/msd/www/MailChimp/demo.php",
+		"/home/msd/www/MailChimp/demo.php~",
+		"/home/msd/Desktop/index.html",
+		"/home/msd/Desktop/MailChimp/MCAPI.class.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/css/styles.css",
+		"/home/msd/www/MailChimp/MCAPI.class.php",
+		"/home/msd/www/wordpress/wp-content/plugins/test/test.php",
+		"/home/msd/www/wordpress/wp-content/plugins/test/test.php~",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/app_test.js",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/dashboard/dashboard.php",
+		"/home/msd/Downloads/wordpress_theme/selectize.js-master/examples/js/index.js",
+		"/home/msd/Downloads/wordpress_theme/selectize.js-master/examples/css/stylesheet.css",
+		"/home/msd/www/wordpress/wp-content/plugins/test (2)/test.php",
+		"/home/msd/www/bootstrap-layout-builder/gulpfile.js",
+		"/home/msd/www/bootstrap-layout-builder/assets/vendor/jquery-ui/jquery-ui.js",
+		"/home/msd/Desktop/example/places.html",
+		"/home/msd/Downloads/wordpress_theme/forms/css/screen.css",
+		"/home/msd/Downloads/wordpress_theme/forms/index.html",
+		"/home/msd/www/wordpress/wp-content/plugins/bloom101/dashboard/includes/options.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/optin-type/stickytop_show_optin.js",
+		"/home/msd/www/wordpress/wp-includes/functions.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/helper/view_lightbox_html.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/optin-type/lightbox_show_optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/optin-type/flyin_show_optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/helper/view_flying_html.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/helper/view_stickytop_html.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/optin_load/optin_5sec_script.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/optin_load/optin_scrolling_script.js",
+		"/home/msd/Downloads/wordpress_theme/source/css-sticky-position/index3.html",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/optin_load/optin_onload_script.js",
+		"/home/msd/Downloads/wordpress_theme/startbootstrap-stylish-portfolio-1.0.2/index.html",
+		"/home/msd/Downloads/wordpress_theme/startbootstrap-stylish-portfolio-1.0.2/css/stylish-portfolio.css",
+		"/home/msd/www/bootstrap-layout-builder/assets/vendor/jquery/jquery.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/interval/interval1-optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/interval/interval3-optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/interval/interval2-optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/position/optin-bottom-position.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/position/optin-top-position.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/helper/view_html.php",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/interval/interval4-optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/test/assets/js/app_optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-optin/xpert-optin.php",
+		"/home/msd/www/wordpress/wp-content/plugins/ultimate-paged-post-splitter/assets/js/app_optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/ultimate-paged-post-splitter/includes/upps-enqueue-scripts.php",
+		"/home/msd/www/wordpress/wp-content/plugins/ultimate-paged-post-splitter/ultimate-paged-post-splitter.php",
+		"/home/msd/www/wordpress/wp-content/plugins/ultimate-paged-post-splitter/includes/upps-setting-options.php",
+		"/home/msd/www/wordpress/wp-content/plugins/ultimate-paged-post-splitter/assets/js/upps-scripts.js",
+		"/home/msd/www/wordpress/wp-content/plugins/ultimate-paged-post-splitter/includes/upps-functions.php",
+		"/home/msd/www/wordpress/wp-content/themes/themefisher-wp/index.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-optin/helper/settings-option.php",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-optin/assets/js/app_optin.js",
+		"/home/msd/www/wordpress/wp-content/plugins/test/text.php",
+		"/home/msd/Ruby_on_Rails/rails-project/config/environment.rb",
+		"/home/msd/Ruby_on_Rails/rails-project/config/routes.rb",
+		"/home/msd/www/digicom/templates/expose/css/template.css",
+		"/home/msd/www/digicom/templates/expose/less/template.less",
+		"/home/msd/www/digicom/templates/expose/js/parallax.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion-wp/helper/html.php",
+		"/home/msd/www/digicom/templates/expose/js/template.js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion-wp/xpert_accordion.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/msd/www/wordpress/wp-content/plugins/team-post-type-master",
+			"/home/msd/www/wordpress/wp-content/plugins/bloom101",
+			"/home/msd/www/wordpress/wp-content/plugins/xpert-tabs",
+			"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion",
+			"/home/msd/www/wordpress/wp-content/plugins/fancytabs",
+			"/home/msd/www/wordpress/wp-content/plugins/xpert-tabs",
+			"/home/msd/Documents/xpert-accordion (2)",
+			"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion",
+			"/home/msd/www/wordpress/wp-content/plugins/magic_shortcode",
+			"/home/msd/www/wordpress/wp-content/plugins/magic_shortcode/chosen",
+			"/home/msd/www/wordpress/wp-content/plugins/tinymc-popup",
+			"/home/msd/www/wordpress/wp-content/plugins/easy-digital-downloads",
+			"/home/msd/www/wordpress/wp-content/plugins/shortcodes-ultimate",
+			"/home/msd/www/wordpress/wp-content/themes/twentyfourteen",
+			"/home/msd/www/wordpress/wp-content/plugins/easy-digital-downloads",
+			"/home/msd/Downloads/wordpress_theme/shortcodes-ultimate",
+			"/home/msd/www/wordpress/wp-content/plugins/easy-digital-downloads",
+			"/home/msd/www/wordpress/wp-content/theme",
+			"/home/msd/www/wordpress/wp-content/plugins/easy-digital-downloads",
+			"/home/msd/www/wordpress/wp-content/plugins/accordion-shortcodes",
+			"/home/msd/www/wordpress/wp-content/plugin/accordion-shortcodes",
+			"/home/msd/www/wordpress/wp-content/themes/xfolio-theme",
+			"/home/msd/www/wordpress/wp-content/themes/twentyfourteen/cs-framework",
+			"/home/msd/www/wordpress/wp-content/themes/wp_themex",
+			"/home/msd/www/wordpress/wp-content/themes/customize_me",
+			"/home/msd/www/wordpress/wp-content/themes/wp_themex",
+			"/home/msd/www/wordpress/wp-content/themes/customize_me",
+			"/home/msd/www/wordpress/wp-content/themes/wp_themex",
+			"/home/msd/www/wordpress/wp-content/themes/customize_me",
+			"/home/msd/www/wordpress/wp-content/themes/x",
+			"/home/msd/www/wordpress/,/home/msd/www/wordpress/wp-content/themes/custom_me",
+			"/home/msd/www/wordpress/",
+			"/home/msd/www/wordpress/wp-admin",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"run",
+			"post-thumbnails",
+			"tx_position",
+			"hide",
+			"script",
+			"_url",
+			"custom-input",
+			"name=\"tx_position\"",
+			"tx_position",
+			"btn",
+			"shortcode",
+			"/]",
+			"/",
+			"xpert-feature",
+			"button",
+			"btn",
+			"#",
+			"font",
+			"img",
+			"imge",
+			"modal",
+			"myModal",
+			"id",
+			"wpb_admin_popup",
+			"modal",
+			"wpb_dialog",
+			"get_the_title",
+			"page_ti",
+			"post",
+			"reauire",
+			"admin",
+			"$tx_position      = get_post_meta($id, 'tx_position', true);",
+			"your",
+			"text",
+			"metabox",
+			"title",
+			"themeum",
+			"Team",
+			"menu",
+			"admin_m",
+			"menu",
+			"Add Profile",
+			"Team",
+			"panel-title",
+			"title-acc",
+			"editor",
+			"content",
+			"textarea",
+			"h1",
+			"tinymc",
+			"wp_editor",
+			"test_layout3",
+			"coloum-generator",
+			"editor",
+			"wp_editor",
+			"home_page",
+			"});\n",
+			"mail",
+			"echo",
+			"optinHome",
+			"register_setting( 'xpert-settings-group', 'page_id' );",
+			"echo",
+			"et_dashboard_multiple_select",
+			"sele",
+			"select-state-disabled",
+			"select-beast-empty",
+			"select-state",
+			"States",
+			"selectize",
+			"get_pages",
+			"highlight",
+			"container",
+			"width",
+			"style",
+			"draggable",
+			".ui-draggable-handle{",
+			"helper",
+			"96",
+			"width",
+			"switch",
+			"DISPLAY ON THESE PAGES",
+			"get_pages",
+			"DISPLAY SETTINGS",
+			"editor",
+			"wpet_validate_options",
+			"tinymc",
+			"3495",
+			"border-box",
+			"scrol",
+			"optin_timer",
+			"optin_load",
+			"select_option",
+			"frontend_flyin_function",
+			"frontend_optin_onload_script",
+			"close",
+			"nav",
+			"interval",
+			"scrol",
+			"vie",
+			"addClass",
+			"TX",
+			".css",
+			"boot",
+			"baw",
+			"save",
+			"button",
+			"get",
+			"get-option",
+			"callback",
+			"get_option",
+			"get-option",
+			"modal",
+			"img",
+			"img-",
+			"img",
+			"collapse",
+			"cd-floating-background",
+			"cd-background-wrapper",
+			"value",
+			"notifications",
+			"notify",
+			"wedevs_basics[selectbox]",
+			"settings_fields",
+			"yes",
+			"saved.",
+			"saved",
+			"message",
+			"strong"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "class-xpert-extender-admin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2838,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1463,
+								1463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 798.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "AddonContainer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "xpert-extender.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/www/wordpress/wp-content/plugins/wp-optin/wp-optin.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
