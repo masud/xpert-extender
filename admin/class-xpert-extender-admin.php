@@ -51,9 +51,17 @@ class Xpert_Extender_Admin {
 
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
-
 	}
 
+	public function add_custom_meta_boxes()
+	{
+		// echo "its over";die();
+	    add_meta_box( 'prfx_meta', __( 'Meta Box Title', 'prfx-textdomain' ), [$this, 'prfx_meta_callback'], 'page' );
+	}
+
+	function prfx_meta_callback( $post ) {
+	    echo 'This is a meta box';  
+	}
 	/**
 	 * Register the stylesheets for the admin area.
 	 *
