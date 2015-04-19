@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"tx",
+				"tx_setting_style"
+			],
+			[
+				"images",
+				"images"
+			],
+			[
 				"fu",
 				"fun	function …"
 			],
@@ -22,10 +30,6 @@
 			[
 				"lay",
 				"layoutThree"
-			],
-			[
-				"tx",
-				"tx_position"
 			],
 			[
 				"get_the",
@@ -316,10 +320,45 @@
 	"buffers":
 	[
 		{
+			"contents": "<?php\n\n/**\n * The admin-specific functionality of the plugin.\n *\n * @link       http://www.themexpert.com\n * @since      1.0.0\n *\n * @package    Xpert_Extender\n * @subpackage Xpert_Extender/admin\n */\n\n/**\n * The admin-specific functionality of the plugin.\n *\n * Defines the plugin name, version, and two examples hooks for how to\n * enqueue the admin-specific stylesheet and JavaScript.\n *\n * @package    Xpert_Extender\n * @subpackage Xpert_Extender/admin\n * @author     ThemeXpert <support@themexpert.com>\n */\nclass Xpert_Extender_Admin {\n\n	/**\n	 * The ID of this plugin.\n	 *\n	 * @since    1.0.0\n	 * @access   private\n	 * @var      string    $plugin_name    The ID of this plugin.\n	 */\n	private $plugin_name;\n\n	/**\n	 * The version of this plugin.\n	 *\n	 * @since    1.0.0\n	 * @access   private\n	 * @var      string    $version    The current version of this plugin.\n	 */\n	private $version;\n\n	/**\n	 * Initialize the class and set its properties.\n	 *\n	 * @since    1.0.0\n	 * @param      string    $plugin_name       The name of this plugin.\n	 * @param      string    $version    The version of this plugin.\n	 */\n	public function __construct( $plugin_name, $version ) {\n\n		$this->plugin_name = $plugin_name;\n		$this->version = $version;\n	}\n\n	public function add_custom_meta_boxes()\n	{\n		// echo \"its over\";die();\n	    add_meta_box( 'prfx_meta', __( 'Meta Box Title', 'prfx-textdomain' ), [$this, 'prfx_meta_callback'], 'page' );\n	}\n\n	public function prfx_meta_callback( $post ) {\n\n		$id = $post->ID;\n		$tx_title         = get_post_meta($id, 'tx_title', true);\n		$tx_position      = get_post_meta($id, 'tx_position', true);\n\n	    ?>\n        <style>\n        #tx_extender table { width: 100%; }\n        #tx_extender td.custom-title { width: 30%; height: 28px; }\n        </style>\n        <table class=\"custom-table\">          \n\n            <tr>\n                <td class=\"custom-title\"><label for=\"tx_position\">Select Addons</label></td>\n                <td class=\"custom-input\">\n                    <select id=\"tx_position\" class=\" tx_feature_layout image-picker show-html\" name=\"tx_position\">\n                              <option data-addon=\"gallery\" data-img-src=\" <?php echo plugins_url('../assets/images/layoutOne.jpg', __FILE__) ?>\" value=\"layoutOne\"<?php if($tx_position == 'layoutOne') echo 'selected=\"selected\"'; ?>></option>\n                              <option data-addon=\"slider\" data-img-src=\" <?php echo plugins_url('../assets/images/layoutTwo.jpg', __FILE__) ?>\" value=\"layoutTwo\"<?php if($tx_position == 'layoutTwo') echo 'selected=\"selected\"'; ?>></option>\n                              <option data-addon=\"testimonial\" data-img-src=\" <?php echo plugins_url('../assets/images/layoutThree.jpg', __FILE__) ?>\" value=\"layoutThree\"<?php if($tx_position == 'layoutThree') echo 'selected=\"selected\"'; ?>></option>\n                              <option data-addon=\"hero\" data-img-src=\" <?php echo plugins_url('../assets/images/layoutFour.jpg', __FILE__) ?>\" value=\"layoutFour\"<?php if($tx_position == 'layoutFour') echo 'selected=\"selected\"'; ?>></option>                 \n                    </select>\n                </td>\n            </tr>\n\n             <tr class=\"addon-settings\" data-addon=\"gallery\">\n                <td class=\"custom-title\"><label for=\"tx_title\">Call To Action Title</label></td>\n                <td class=\"custom-input\">\n                    <input type=\"text\" class=\"widefat\" id=\"tx_title\" name=\"tx_title\" value=\"<?php echo esc_attr($tx_title); ?>\"/>\n                </td>			   \n            </tr>\n             <tr class=\"addon-settings\" data-addon=\"gallery\">\n             <td class=\"custom-title\"><label for=\"meta-image\" class=\"prfx-row-title\"><?php _e( 'Example File Upload', 'prfx-textdomain' )?></label></td>\n			   	 <td class=\"custom-input\">\n			    <input type=\"text\" name=\"meta-image\" id=\"meta-image\" value=\"<?php if ( isset ( $prfx_stored_meta['meta-image'] ) ) echo $prfx_stored_meta['meta-image'][0]; ?>\" />\n			    <input type=\"button\" id=\"meta-image-button\" class=\"button\" value=\"<?php _e( 'Choose or Upload an Image', 'prfx-textdomain' )?>\" />\n            	</td>\n            </tr>\n\n			<!-- <tr class=\"addon-settings hide\" data-addon=\"gallery\">\n				<td>gallery</td>\n			</tr> -->\n			<tr class=\"addon-settings hide\" data-addon=\"testimonial\">\n				<td>testimonial</td>\n			</tr>\n			<tr class=\"addon-settings hide\" data-addon=\"slider\">\n				<td>slider</td>\n			</tr>\n			<tr class=\"addon-settings hide\" data-addon=\"hero\">\n				<td>hero</td>\n			</tr>\n\n        </table>           \n\n        <?php  \n	}\n\n\n    function tx_save($id) {\n        if(!empty($_POST['tx_title']))\n            update_post_meta($id, 'tx_title', $_POST['tx_title']) || add_post_meta($id, 'tx_title', $_POST['tx_title']);\n       \n        if(!empty($_POST['tx_position']))\n            update_post_meta($id, 'tx_position', $_POST['tx_position']) || add_post_meta($id, 'tx_position', $_POST['tx_position']);\n       \n    }\n\n	\n\n\nfunction prfx_image_enqueue() {\n    global $typenow;\n    if( $typenow == 'post' ) {\n        wp_enqueue_media();\n \n        // Registers and enqueues the required javascript.\n        // wp_register_script( 'meta-box-image', plugin_dir_url( __FILE__ ) . 'meta-box-image.js', array( 'jquery' ) );\n        wp_localize_script( 'meta-box-image', 'meta_image',\n            array(\n                'title' => __( 'Choose or Upload an Image', 'prfx-textdomain' ),\n                'button' => __( 'Use this image', 'prfx-textdomain' ),\n            )\n        );\n        wp_enqueue_script( 'meta-box-image' );\n    }\n}\n\n\n\n\n\n	/**\n	 * Register the stylesheets for the admin area.\n	 *\n	 * @since    1.0.0\n	 */\n	public function enqueue_styles() {\n\n		/**\n		 * This function is provided for demonstration purposes only.\n		 *\n		 * An instance of this class should be passed to the run() function\n		 * defined in Xpert_Extender_Loader as all of the hooks are defined\n		 * in that particular class.\n		 *\n		 * The Xpert_Extender_Loader will then create the relationship\n		 * between the defined hooks and the functions defined in this\n		 * class.\n		 */\n\n		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/xpert-extender-admin.css', array(), $this->version, 'all' );\n		wp_enqueue_style( $this->plugin_name.\"image-picker-css\", plugin_dir_url( __FILE__ ) . 'css/image-picker.css', array(), $this->version, 'all' );\n		\n	}\n\n	/**\n	 * Register the JavaScript for the admin area.\n	 *\n	 * @since    1.0.0\n	 */\n	public function enqueue_scripts() {\n\n		/**\n		 * This function is provided for demonstration purposes only.\n		 *\n		 * An instance of this class should be passed to the run() function\n		 * defined in Xpert_Extender_Loader as all of the hooks are defined\n		 * in that particular class.\n		 *\n		 * The Xpert_Extender_Loader will then create the relationship\n		 * between the defined hooks and the functions defined in this\n		 * class.\n		 */\n\n		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/xpert-extender-admin.js', array( 'jquery' ), $this->version, false );\n		wp_enqueue_script( $this->plugin_name.\"image-picker-js\", plugin_dir_url( __FILE__ ) . 'js/image-picker.min.js', array( 'jquery' ), $this->version, false );\n		wp_enqueue_script( $this->plugin_name.\"image-picker-js\", plugin_dir_url( __FILE__ ) . 'js/image-picker.min.js', array( 'jquery' ), $this->version, false );\n\n	} wp_register_script( 'meta-box-image', plugin_dir_url( __FILE__ ) . 'meta-box-image.js', array( 'jquery' ) );\n\n}\n",
 			"file": "class-xpert-extender-admin.php",
+			"file_size": 7162,
+			"file_write_time": 130738961454180155,
 			"settings":
 			{
-				"buffer_size": 2838,
+				"buffer_size": 7432,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/xpert-feature.php",
+			"settings":
+			{
+				"buffer_size": 16192,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/msd/www/wordpress/wp-content/plugins/xpert-extender/includes/class-xpert-extender.php",
+			"settings":
+			{
+				"buffer_size": 5993,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/xpert-extender-admin.js",
+			"settings":
+			{
+				"buffer_size": 2354,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/xpert-extender-admin.css",
+			"settings":
+			{
+				"buffer_size": 175,
 				"line_ending": "Unix"
 			}
 		},
@@ -397,11 +436,20 @@
 	},
 	"expanded_folders":
 	[
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets",
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender",
-		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/admin"
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/admin/css",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/admin/js",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/assets",
+		"/home/msd/www/wordpress/wp-content/plugins/xpert-extender/includes"
 	],
 	"file_history":
 	[
+		"/home/msd/www/bootstrap-layout-builder/index.html",
+		"/home/msd/www/bootstrap-layout-builder/assets/js/script.js",
+		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/app_optin.js",
+		"/home/msd/www/bootstrap-layout-builder/assets/css/style.css",
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/assets/js/app.js",
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/gulpfile.js",
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/text-button.js",
@@ -444,9 +492,6 @@
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/tinymc_.php",
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-accordion/shortcode/accordion.php",
 		"/home/msd/www/wordpress/wp-content/plugins/xpert-feature/xpert-feature.php",
-		"/home/msd/www/bootstrap-layout-builder/assets/js/script.js",
-		"/home/msd/www/bootstrap-layout-builder/assets/css/style.css",
-		"/home/msd/www/bootstrap-layout-builder/index.html",
 		"/home/msd/www/wordpress/wp-content/plugins/test_team/starter-team.php",
 		"/home/msd/www/wordpress/wp-content/plugins/team-post-type-master/includes/class-post-type-registrations.php",
 		"/home/msd/www/wordpress/wp-content/plugins/tx-team/tx-team.php",
@@ -456,7 +501,6 @@
 		"/home/msd/www/wordpress/wp-content/plugins/team-post-type-master/team-post-type.php",
 		"/home/msd/www/wordpress/wp-content/plugins/starter-team/starter-team.php",
 		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/css/app.css",
-		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/app_optin.js",
 		"/home/msd/www/wordpress/wp-content/plugins/wp-optin/assets/js/app.js",
 		"/home/msd/www/wordpress/wp-content/plugins/bloom101/js/admin.js",
 		"/home/msd/www/wordpress/wp-content/plugins/bloom101/bloom.php",
@@ -581,6 +625,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"metaboxes",
+			"id",
+			"tr ",
+			"gallery",
+			"<option",
+			"offset_class1",
+			"offset_input1",
+			"add-new-comment",
 			"run",
 			"post-thumbnails",
 			"tx_position",
@@ -700,15 +752,7 @@
 			"cd-floating-background",
 			"cd-background-wrapper",
 			"value",
-			"notifications",
-			"notify",
-			"wedevs_basics[selectbox]",
-			"settings_fields",
-			"yes",
-			"saved.",
-			"saved",
-			"message",
-			"strong"
+			"notifications"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -736,15 +780,74 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2838,
+						"buffer_size": 7432,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1463,
-								1463
+								7428,
+								7428
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 319.0,
+						"translation.y": 3300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/home/msd/www/wordpress/wp-content/plugins/xpert-feature-x/xpert-feature.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1270,
+								1270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 399.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/msd/www/wordpress/wp-content/plugins/xpert-extender/includes/class-xpert-extender.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4623,
+								4623
 							]
 						],
 						"settings":
@@ -753,14 +856,71 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 798.0,
+						"translation.y": 2793.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 3,
+					"file": "js/xpert-extender-admin.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2354,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1564,
+								1564
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/xpert-extender-admin.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "AddonContainer.php",
 					"semi_transient": false,
 					"settings":
@@ -784,7 +944,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]

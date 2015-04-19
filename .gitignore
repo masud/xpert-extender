@@ -1,0 +1,8 @@
+/node_modules
+xpert-extender.sublime-project
+*~
+*.diff
+*.patch
+.DS_Store
+.project
+.settings

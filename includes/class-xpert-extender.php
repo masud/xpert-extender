@@ -155,8 +155,11 @@ class Xpert_Extender {
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_styles' );
 		$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'enqueue_scripts' );
 		$this->loader->add_action( 'add_meta_boxes', $plugin_admin, 'add_custom_meta_boxes' );
+		$this->loader->add_action( 'save_post', $plugin_admin, 'tx_save' );
+		//$this->loader->add_action( 'admin_enqueue_scripts', $plugin_admin, 'prfx_image_enqueue' );
 
 	}
+
 
 	/**
 	 * Register all of the hooks related to the public-facing functionality

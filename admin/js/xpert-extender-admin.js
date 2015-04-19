@@ -12,6 +12,8 @@
 			$("tr[data-addon="+addon+"]").removeClass('hide');
 		});
 
+
+
 	});
 	/**
 	 * All of the code for your admin-specific JavaScript source
